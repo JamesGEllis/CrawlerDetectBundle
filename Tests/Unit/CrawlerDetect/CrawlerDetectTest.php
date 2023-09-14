@@ -37,7 +37,7 @@ class CrawlerDetectTest extends TestCase
     {
         $rsMock = $this->getRequestStackMock();
         $rsMock->expects($this->once())
-            ->method('getMasterRequest')
+            ->method('getMainRequest')
             ->willReturn(null);
 
         $crawlerDetect = new CrawlerDetect($rsMock);
@@ -53,7 +53,7 @@ class CrawlerDetectTest extends TestCase
     {
         $rsMock = $this->getRequestStackMock();
         $rsMock->expects($this->once())
-            ->method('getMasterRequest')
+            ->method('getMainRequest')
             ->willReturn(new Request(array(), array(), array(), array(), array(), array(
                 'HTTP_USER_AGENT' => $userAgent,
             )));

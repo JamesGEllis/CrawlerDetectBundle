@@ -18,7 +18,7 @@ class CrawlerDetect extends BaseCrawlerDetect
      */
     public function __construct(RequestStack $requestStack)
     {
-        if ($request = $requestStack->getMasterRequest()) {
+        if ($request = $requestStack->getMainRequest()) {
             // the app is accessed by a HTTP request
             $headers = $request->server->all();
             $userAgent = $request->headers->get('User-Agent');

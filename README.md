@@ -1,5 +1,14 @@
 # CrawlerDetectBundle
 
+## Notes for Tempest:
+
+This is a largely unmodified repo forked from nicolasmure's github as referenced below. That package appears to be abandoned and was stuck on an older version of Symfony, so this package is meant to just maintain the Symfony wrapper for Symfony 6+.
+
+That means we have a few things we need to do now that we're maintaining this repo:
+
+  * Update the Symfony wiring as the Symfony core is updated in the Tempest applications (AutoTempest, SearchTempest)
+  * Keep the `jaybizzle/crawler-detect` bundle up-to-date as new versions are released. (See here: https://github.com/JayBizzle/Crawler-Detect)
+  
 [![Build Status](https://travis-ci.org/nicolasmure/CrawlerDetectBundle.svg?branch=master)](https://travis-ci.org/nicolasmure/CrawlerDetectBundle)
 [![Coverage Status](https://coveralls.io/repos/github/nicolasmure/CrawlerDetectBundle/badge.svg?branch=master)](https://coveralls.io/github/nicolasmure/CrawlerDetectBundle?branch=master)
 
